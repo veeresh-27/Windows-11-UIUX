@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /* background-image: url('./assets/bg.jpeg'); */
+    height: 100vh;
+    overflow: hidden;
+}
+video{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(27, 26, 26);
+    z-index: -1;
+}
+
+.desktop{
+   position: absolute;
+   top: 0;
+   left: 0;
+   display: flex;
+   flex-direction: column;
+   z-index: 2;
+}
+
+.desktop img{
+    width: 25px;
+    height: 25px;
+}
+
+
+
+.desktop .thispc,.desktop .recycle-bin,.desktop .chrome,.desktop .edge{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 2px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border: 1px solid rgba(243, 243, 243, 0);
+}
+
+.desktop .thispc p,.desktop .recycle-bin p,.desktop .chrome p,.desktop .edge p{
+    
+    color: #f3f3f3;
+    font-size: 8px;
+    font-weight:lighter;
+    
+}
+
+.desktop .thispc:hover,.desktop .recycle-bin:hover,.desktop .chrome:hover,.desktop .edge:hover{
+    background-color: rgba(253, 253, 253, 0.4);
+    border: 1px solid rgba(243, 243, 243, 0.5);
+}
+
+.taskbar{
+    background-color: rgba(243, 243, 243, 0.8);
+    height: 30px;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    z-index: 1;
+    
+}
+
+.taskbar img{
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+
+}
+
+
+
+.startmenu{
+    position: absolute;
+    bottom: -400px;
+    width: 100%;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+}
+
+.startmenu img{
+    border-radius: 8px;
+}
